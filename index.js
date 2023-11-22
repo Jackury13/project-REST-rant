@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
     res.render(`home`)
 })
 
+//INDEX
+app.get('*', (req, res) => {
+    res.render('index')
+  })
+
 app.get('*', (req, res) => {
     res.render ('error404')
 })
