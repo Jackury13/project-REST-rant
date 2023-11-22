@@ -14,5 +14,6 @@
     "express-react-views": "^0.11.0",
     "react": "^18.2.0"
   },
-  "description": ""
+  "description": "REST-Rant is an app where users can review restaurants.",
+  "devDependencies": {}
 }
