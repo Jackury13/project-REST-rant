@@ -13,7 +13,7 @@ app.engine('jsx', require(`express-react-views`).createEngine())
 app.use(express.static('public'))
 
 
-//controllers and routs 
+//controllers and routes 
 app.use('/places', require(`./controllers/places`))
 
 app.get('/', (req, res) => {
