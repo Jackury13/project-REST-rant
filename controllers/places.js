@@ -16,9 +16,18 @@ router.get('/', (req,res) => {
         cuisines: 'Coffee, Bakery',
         pic: "/images/nathan-dumlao-zUNs99PGDg0-unsplash.jpg"
       }]
-      
-    res.render('places/index', { places })
+      res.render('places/index', { places })
 })
+
+router.get('/places', (req, res) => {
+  res.send()
+})
+
+
+router.post('/places', (req, res) =>{
+  res.send()
+})
+
 
 router.get('/new', (req, res) => {
   res.render('places/new')
