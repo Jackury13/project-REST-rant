@@ -7,7 +7,7 @@ function edit_form (data) {
           <main>
             <h1>Edit Place</h1>
             <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
-
+                <div>
                     <div className='form-group'>
                         <label htmlFor="name">Place Name</label>
                         <input className='form-control' 
@@ -28,6 +28,8 @@ function edit_form (data) {
                         id="city"
                         name="city" />
                     </div>
+                </div>
+                <div>
                     <div className='form-group'>
                         <label htmlFor="state">Place State</label>
                         <input className='form-control' id="state" 
@@ -39,6 +41,7 @@ function edit_form (data) {
                         name="cuisines" 
                         required/>
                     </div>
+                </div>
                     <input className='btn btn-primary' type="submit" value="Add Place" />
                 </form>
           </main>
@@ -47,3 +50,4 @@ function edit_form (data) {
 }
 
 module.exports = edit_form
+
